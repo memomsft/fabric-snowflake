@@ -17,6 +17,10 @@ Update the placeholders for your **Fabric Workspace**, **Lakehouse** and **Tenan
 - In the Properties Menu, copy the URL.
   **Note:** You will replace the https:// from the URL with the prefix azure:// in the SQL below for creating the volume in Snowflake
 
+![Snowflake](img/snowflake_4.png)
+![Snowflake](img/snowflake_3.png)
+
+---
 
 ### B) Enable permissions to Snowflake in Microsoft Fabric
 
