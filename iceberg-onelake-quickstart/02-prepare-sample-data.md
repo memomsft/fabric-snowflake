@@ -2,6 +2,10 @@
 
 We will use the built‑in **SNOWFLAKE_SAMPLE_DATA** share to keep things simple.
 
+- The first step is to create a database and warehouse in the Snowflake environment.
+- Then create a database for the sample data from a public share in the Data Cloud.
+- Let's run the following code statement by statement
+
 > Replace your names as needed, but the workshop uses the following objects:
 > - Warehouse: `FAB_SF_WH`
 > - Database: `FAB_SF_DEMO_DB`
