@@ -30,6 +30,28 @@ Also, we will require the Azure Tenant ID. We can find this easily in the Fabric
 ![Snowflake](img/snowflake_5.png)
 ![Snowflake](img/snowflake_6.png)
 
+
+Now, with these values let's create the external volume in Snowflake. Just replace the below parameters with your details
+
+```sql
+CREATE OR REPLACE EXTERNAL VOLUME FabricExtVol
+  STORAGE_LOCATIONS =
+    (
+      (
+        NAME = 'FabricExtVol'
+        STORAGE_PROVIDER = 'AZURE'
+        STORAGE_BASE_URL = 'azure://onelake.dfs.fabric.microsoft.com/<FabricWorkspaceName>>/<FabricLakehouseName>.Lakehouse/Files/'
+        AZURE_TENANT_ID = '<Tenant ID>'
+      )
+    );
+
+```
+
+![Snowflake](img/snowflake_7.png)
+
+
+
+
 ---
 
 ### B) Enable permissions to Snowflake in Microsoft Fabric
