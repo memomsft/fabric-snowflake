@@ -3,34 +3,23 @@
 In this step you will **(a) create an External Volume** that points to your Fabric OneLake path and **(b) create an Iceberg table** stored there.
 
 ### A) Create External Volume (points to OneLake)
+
+Before creating an Iceberg table, we must have an external volume. An external volume is one Snowflake object that stores information about your cloud storage locations, and identity and access management (IAM) entities (in this case, our Entra ID Tenant). Snowflake uses the external volume to establish a connection with our cloud storage in order to access Iceberg metadata and Parquet data.
+
+We will need the OneLake Base URL. To find this in Fabric UI:
+
 Update the placeholders for your **Fabric Workspace**, **Lakehouse** and **Tenant ID**.
 
-```sql
-USE ROLE ACCOUNTADMIN;
-USE DATABASE FAB_SF_DEMO_DB;
-USE SCHEMA ICEBERG_WS;
+- Go into your Fabric Workspace.
+- Create a New Item.
+- Select Lakehouse and name it "snowflakeQS".
+- In the Explorer, click the elipses next to Files and then Properties.
+- In the Properties Menu, copy the URL.
+  **Note:** You will replace the https:// from the URL with azure:// in the SQL below.
 
-CREATE OR REPLACE EXTERNAL VOLUME EXVOL_ONELAKE_WS
-  STORAGE_LOCATIONS = (
-    (
-      NAME = 'oneLakeVol',
-      STORAGE_PROVIDER = 'AZURE',
-      STORAGE_BASE_URL = 'azure://onelake.dfs.fabric.microsoft.com/<FabricWorkspaceName>/<LakehouseName>.Lakehouse/Files/iceberg_ws/',
-      AZURE_TENANT_ID = '<YourTenantID>'
-    )
-  );
 
-DESC EXTERNAL VOLUME EXVOL_ONELAKE_WS;
-```
 
-**Copy the value of `AZURE_MULTI_TENANT_APP_NAME`** from the `DESC` output — it is the **Snowflake service principal** you must grant access to the Lakehouse in Fabric.
 
-### B) Grant SP access in Fabric
-1. In **Fabric Admin portal** / your **Workspace settings**, enable Iceberg virtualization if applicable.
-2. In the **Lakehouse**, grant **Contributor** to the **Snowflake SP** (the value from `AZURE_MULTI_TENANT_APP_NAME`).
-
-### C) Create & Populate the Iceberg table
-We’ll create a dimension‑style table with a workshop‑specific name: **`WS_DIM_CUSTOMER`**.
 
 ```sql
 USE DATABASE FAB_SF_DEMO_DB;
