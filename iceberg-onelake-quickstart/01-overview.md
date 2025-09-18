@@ -19,7 +19,7 @@ You will create an external volume and an Iceberg table using publicly shared da
 
 ## What You will Need
 - A free [Snowflake](https://signup.snowflake.com/?_fsi=4LjRcWEw) Account
-- [Fabric Capacity](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial?_fsi=4LjRcWEw) Important: Must be in same region as your Snowflake Account
+- [Fabric Capacity](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial?_fsi=4LjRcWEw) **Important:** Must be in same region as your Snowflake Account
 - For simplicity it is best if both platforms have access to the public internet and are not in a virtual network.
 
 Below the end-to-end architecture reference:
