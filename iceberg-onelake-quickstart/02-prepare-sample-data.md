@@ -1,9 +1,10 @@
 # 2. Prepare Sample Data
 
-We will use the built‑in **SNOWFLAKE_SAMPLE_DATA** share to keep things simple.
+We will use the built‑in data share available in your account to keep things simple. For example in our case is: `SFC_SAMPLES_AZWESTUS2.SAMPLE_DATA`
+ **Your share name might be different depending on your Snowflake Region**
 
 - The first step is to create a database and warehouse in the Snowflake environment.
-- Then create a database for the sample data from a public share in the Data Cloud.
+- Then we will take sample data from a built-in Snowflake public share in the Data Cloud.
 - Let's run the following code statement by statement
 
 > Replace your names as needed, but the workshop uses the following objects:
@@ -23,10 +24,7 @@ USE DATABASE FAB_SF_DEMO_DB;
 CREATE OR REPLACE SCHEMA ICEBERG_WS;
 USE SCHEMA ICEBERG_WS;
 
--- Create a database for the sample data from the share.
-CREATE DATABASE SNOWFLAKE_SAMPLE_DATA FROM SHARE SFC_SAMPLES.SAMPLE_DATA;
-
--- Grant the PUBLIC role access to the database.
+-- Let's use the `SNOWFLAKE_SAMPLE_DATA` database from the built-in share . First grant the `PUBLIC` role access to the sample database.
 GRANT IMPORTED PRIVILEGES ON DATABASE SNOWFLAKE_SAMPLE_DATA TO ROLE PUBLIC;
 
 -- Quick peek at the sample customer data we'll use later
