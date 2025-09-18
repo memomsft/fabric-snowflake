@@ -31,4 +31,6 @@ GRANT IMPORTED PRIVILEGES ON DATABASE SNOWFLAKE_SAMPLE_DATA TO ROLE PUBLIC;
 SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.customer LIMIT 10;
 ```
 
+![Snowflake](img/snowflake_2.png)
+
 > Continue to **[3. Create an Iceberg table in OneLake](03-create-iceberg-table-in-onelake.md)**.
