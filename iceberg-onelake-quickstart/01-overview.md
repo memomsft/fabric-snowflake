@@ -24,7 +24,7 @@ You will create an external volume and an Iceberg table using publicly shared da
 
 Below the end-to-end architecture reference:
 
-![Snowflake](../img/snowflake_1.png)
+![Snowflake](img/snowflake_1.png)
 
 
 > Continue to **[2. Prepare Sample Data](02-prepare-sample-data.md)**.
