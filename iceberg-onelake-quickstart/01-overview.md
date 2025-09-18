@@ -24,7 +24,7 @@ You will create an external volume and an Iceberg table using publicly shared da
 
 Below the end-to-end architecture reference:
 
-
+![Snowflake](../assets/img/dbx-fabric-1.png)
 
 
 > Continue to **[2. Prepare Sample Data](02-prepare-sample-data.md)**.
