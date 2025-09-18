@@ -5,7 +5,7 @@ In this quickstart you will create an **Iceberg table stored in Microsoft Fabric
 
 ## Prerequisites
 - Familiarity with **Snowflake** and access to a [Snowflake](https://signup.snowflake.com/?_fsi=4LjRcWEw) account.
-- Familiarity with **Microsoft Fabric** and a Fabric workspace with **Lakehouse**.
+- Familiarity with [Microsoft Fabric([https://signup.snowflake.com/?_fsi=4LjRcWEw](https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview?_fsi=4LjRcWEw)) and a Fabric workspace with **Lakehouse**.
 - Basic understanding of **Apache Iceberg** concepts.
 
 ## What You Will Learn
