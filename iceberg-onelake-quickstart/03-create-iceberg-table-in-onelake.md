@@ -20,6 +20,16 @@ Update the placeholders for your **Fabric Workspace**, **Lakehouse** and **Tenan
 ![Snowflake](img/snowflake_4.png)
 ![Snowflake](img/snowflake_3.png)
 
+
+Also, we will require the Azure Tenant ID. We can find this easily in the Fabric UI:
+
+- In the upper right corner click on the `?` for help & support.
+- At the bottom click `About Fabric` (note: this might say About Fabric or PBI depending on which workload is open).
+- Copy the **Tenant URL**. The Tenant ID is the **UUID** that follows `ctid=`
+
+![Snowflake](img/snowflake_5.png)
+![Snowflake](img/snowflake_6.png)
+
 ---
 
 ### B) Enable permissions to Snowflake in Microsoft Fabric
