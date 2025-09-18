@@ -1,6 +1,6 @@
 # 3. Create an Iceberg Table in OneLake
 
-In this step you will **(a) create an External Volume** that points to your Fabric OneLake path and **(b) create an Iceberg table** stored there.
+In this step you will **(a) create an External Volume** that points to your Fabric OneLake path, **(b) enabling permissions** for Snowflake to access our Fabric Workspace and **(c) create an Iceberg table** stored there.
 
 ### A) Create External Volume (points to OneLake)
 
@@ -10,16 +10,20 @@ We will need the OneLake Base URL. To find this in Fabric UI:
 
 Update the placeholders for your **Fabric Workspace**, **Lakehouse** and **Tenant ID**.
 
-- Go into your Fabric Workspace.
+- Go into an existing Fabric Workspace/create a new one.
 - Create a New Item.
-- Select Lakehouse and name it "snowflakeQS".
+- Select Lakehouse and name it "Snow_LH".
 - In the Explorer, click the elipses next to Files and then Properties.
 - In the Properties Menu, copy the URL.
-  **Note:** You will replace the https:// from the URL with azure:// in the SQL below.
+  **Note:** You will replace the https:// from the URL with the prefix azure:// in the SQL below for creating the volume in Snowflake
+
+
+### B) Enable permissions to Snowflake in Microsoft Fabric
 
 
 
 
+### C) Create the Iceberg Table
 
 ```sql
 USE DATABASE FAB_SF_DEMO_DB;
