@@ -4,7 +4,7 @@ Ensure the following before starting:
 - Snowflake account with CREATE DATABASE privilege. 
 - Fabric workspace with Contributor access
 - Internet access from Fabric to Snowflake endpoints
-- Ensure the user who is performing the mirroring has the correct permissions as stated in 
+- Ensure the user who is performing the mirroring has the correct permissions as stated in [Permissions](00-permissions.md)**.
 
 ✅ **Tip:** Use a Fabric F SKU or Trial capacity for hands-on learning.
 
