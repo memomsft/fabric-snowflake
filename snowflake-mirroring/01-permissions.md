@@ -1,4 +1,4 @@
-## Step 0: Snowflake Permissions (Required)
+## Step 1: Snowflake Permissions (Required)
 
 Before starting the mirroring setup, ensure the Snowflake user or role you will use has the following permissions:
 
