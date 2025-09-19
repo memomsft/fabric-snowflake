@@ -66,7 +66,7 @@ DESC EXTERNAL VOLUME <your_ext_volume_name>;
 ```
 
 
-The output of above command returns the **AZURE_CONSENT_URL** and **AZURE_MULTI_TENANT_APP_NAME** properties. Take note of both values. The Azure multitenant app name looks like <name>_<number>, but you only need to capture the <name> portion.
+The output of above command returns the **AZURE_CONSENT_URL** and **AZURE_MULTI_TENANT_APP_NAME** properties. Take note of both values. The Azure multitenant app name looks like `<name>_<number>`, but you only need to capture the `<name>` portion.
 
 ![Snowflake](img/snowflake_8.png)
 
