@@ -40,8 +40,7 @@ GRANT ROLE `<ROLE_NAME>` TO USER `<USER_FOR_MIRRORING>`;
 
 ## 🏗 Warehouse Considerations
 
-You can use any warehouse with USAGE granted to the role. Default `COMPUTE_WH` is fine
-For labs or demos, an X-SMALL warehouse is recommended.
+You can use any warehouse with `USAGE` granted to the role. Default `COMPUTE_WH` is fine. For labs or demos, an `X-SMALL` warehouse is recommended.
 
 **Best Practice for Production:**
 Use a dedicated warehouse for Fabric mirroring.
