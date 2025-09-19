@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="img/fabric.png" alt="Fabric" width="125"/>
+  <img src="assets/fabric.png" alt="Fabric" width="125"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="img/snow.png" alt="Snowflake" width="90"/>
+  <img src="assets/snow1.png" alt="Snowflake" width="90"/>
 </p>
 
 
