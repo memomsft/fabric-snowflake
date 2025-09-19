@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="../assets/fabric.png" alt="Fabric" width="90"/>
+  <img src="img/onelakes.png" alt="One Lake" width="90"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="img/ice.png" alt="Snowflake" width="135"/>
+  <img src="img/ice.png" alt="Iceberg" width="135"/>
 </p>
 
 
