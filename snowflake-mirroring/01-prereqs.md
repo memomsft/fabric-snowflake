@@ -1,10 +1,10 @@
 # Step 1: Prerequisites
 
 Ensure the following before starting:
-- Snowflake account with CREATE DATABASE privilege. 
+- Snowflake account with CREATE DATABASE privilege. In case you want to create new tables to replicate.
 - Fabric workspace with Contributor access
 - Internet access from Fabric to Snowflake endpoints
-- Ensure the user who is performing the mirroring has the correct permissions as stated in [Permissions](00-permissions.md)**.
+- Ensure the user who is performing the mirroring has the correct permissions as stated in [00-premissions](00-permissions.md)**.
 
 ✅ **Tip:** Use a Fabric F SKU or Trial capacity for hands-on learning.
 
