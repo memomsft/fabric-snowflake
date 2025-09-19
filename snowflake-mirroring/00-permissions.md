@@ -49,3 +49,5 @@ This allows you to:
 - Avoid resource contention with other Snowflake workloads
 - Scale warehouse size independently of other workloads
 - Apply different auto-suspend/auto-resume settings
+
+  ![Mirror1](img/mirror1.png)
