@@ -41,6 +41,6 @@ display(df)
 
 
 
-You have now validated **bi‑directional access**: Snowflake wrote data in Iceberg on OneLake storage, and Fabric read it via a shortcut.
+You have now validated **bi‑directional access**: Snowflake wrote data in Iceberg on OneLake storage, and Fabric read it via a shortcut and enable advanced analytic scenarios like creating Power BI semantic models or feed Fabric Data Aagents.
   
 > Continue to **[5. Conclusion and Resources](05-conclusion-and-resources.md)**.
