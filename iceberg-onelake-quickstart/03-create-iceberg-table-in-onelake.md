@@ -56,8 +56,37 @@ CREATE OR REPLACE EXTERNAL VOLUME FabricExtVol
 
 ### B) Enable permissions to Snowflake in Microsoft Fabric
 
+Now the next step is to ensure Snowflake can access our Microsoft Fabric Workspace
+
+Let's run the following command in Snowflake and take note of the following values:
+
+`AZURE_MULTI_TENANT_APP_NAME` --> In the json inside the `property_value` column, let's copy this value. This is the value corresponding to the Service Principal that Snowflake uses to connect to Azure (we can remove the underscore and numbers ad the very end).
+`AZURE_CONSENT_URL` --> Let's take note also of this value
+
+```sql
+DESC EXTERNAL VOLUME <your_ext_volume_name>;
+```
+
+![Snowflake](img/snowflake_8.png)
 
 
+The output of above command returns the AZURE_CONSENT_URL and AZURE_MULTI_TENANT_APP_NAME properties. Take note of both values. The Azure multitenant app name looks like <name>_<number>, but you only need to capture the <name> portion.
+
+Open the consent URL from the previous step in a new browser tab, if you haven't done this previously. If you would like to proceed, consent to the required application permissions, if prompted. You may be redirected to the main Snowflake website.
+
+
+Now let's grant this service principal access to the Fabric Lakehouse we created earlier:
+
+- From **Fabric settings** :gear: --> **Admin Portal** --> **Tenant Settings** --> **Developer Settings** : Enable the option `Service Principals can call Fabric public APIs`
+
+![Snowflake](img/snowflake_9.png)
+
+
+- Open the Workspace we created earlier, click **Manage access** and then click **Add people or groups**
+- Search for the service principal that we copied from Snowflake
+- Add the service principal as a **Contributor**
+
+![Snowflake](img/snowflake_10.png)
 
 ### C) Create the Iceberg Table
 
