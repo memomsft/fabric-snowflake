@@ -4,7 +4,9 @@
 1. Go to the target Fabric Workspace → **New Item** → **Mirrored Snowflake**.
 2. Select **Snowflake** as the source.
 
-   
+![Mirror2](img/mirror4.png)
+![Mirror2](img/mirror5.png)
+
 4. Enter the following details in `connection details`:
 - **Server:** Navigate to the accounts on the resource menu in Snowflake. Cick on `Account Details` you can copy the server name to the clipboard. 
 - **Warehouse:** From the `Compute` section from the resource menu in Snowflake, select `Warehouses`. The warehouse is the Snowflake Warehouse (Compute) and not the database.
@@ -18,6 +20,8 @@
     Azure Key Vault (Optional)
 5. **Privacy Level:** Leave it as is
 6. Click **Connect**
+
+![Mirror2](img/mirror6.png)
 
   
 
