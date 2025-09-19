@@ -58,21 +58,21 @@ CREATE OR REPLACE EXTERNAL VOLUME FabricExtVol
 
 Now the next step is to ensure Snowflake can access our Microsoft Fabric Workspace
 
-Let's run the following command in Snowflake and take note of the following values:
+Let's run the following command in Snowflake:
 
-`AZURE_MULTI_TENANT_APP_NAME` --> In the json inside the `property_value` column, let's copy this value. This is the value corresponding to the Service Principal that Snowflake uses to connect to Azure (we can remove the underscore and numbers ad the very end).
-`AZURE_CONSENT_URL` --> Let's take note also of this value
 
 ```sql
 DESC EXTERNAL VOLUME <your_ext_volume_name>;
 ```
 
+
+The output of above command returns the **AZURE_CONSENT_URL** and **AZURE_MULTI_TENANT_APP_NAME** properties. Take note of both values. The Azure multitenant app name looks like <name>_<number>, but you only need to capture the <name> portion.
+
 ![Snowflake](img/snowflake_8.png)
 
+Open the **consent URL** from the previous step in a new browser tab, if you haven't done this previously. If you would like to proceed, consent to the required application permissions, if prompted. You may be redirected to the main Snowflake website, this will enable the service principal to be assigned within Fabric
 
-The output of above command returns the AZURE_CONSENT_URL and AZURE_MULTI_TENANT_APP_NAME properties. Take note of both values. The Azure multitenant app name looks like <name>_<number>, but you only need to capture the <name> portion.
-
-Open the consent URL from the previous step in a new browser tab, if you haven't done this previously. If you would like to proceed, consent to the required application permissions, if prompted. You may be redirected to the main Snowflake website.
+![Snowflake](img/snowflake_sp.png)
 
 
 Now let's grant this service principal access to the Fabric Lakehouse we created earlier:
