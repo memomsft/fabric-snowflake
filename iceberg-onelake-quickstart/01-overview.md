@@ -1,3 +1,7 @@
+
+<p align="center">
+  <img src="img/ice.png" alt="Iceberg" width="90"/>
+
 # 1. Overview
 
 **Apache Iceberg** is an open table format for large analytic datasets. It brings **ACID transactions**, schema evolution, time travel, and reliable operations to open data on cloud object storage.  
