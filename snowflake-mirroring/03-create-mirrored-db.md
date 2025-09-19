@@ -40,6 +40,6 @@
 
 ![Mirror2](img/mirror9.png) 
 
-Let's query this data to interact with the mirrored data... > Continue to **[4. Validate Query ](04-validate-query.md)**.
+Let's query this data to interact with the mirrored data... > Continue to **[4. Query and Validate Data ](04-validate-query.md)**.
 
 
