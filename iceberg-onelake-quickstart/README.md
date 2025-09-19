@@ -7,7 +7,19 @@
 
 # Getting Started with Iceberg in OneLake (Workshop)
 
-This workshop mirrors the Snowflake Quickstart structure and guides you through creating an **Iceberg table backed by Microsoft OneLake**, then **querying it from both Snowflake and Fabric**.
+This workshop guides you through creating an **Iceberg table backed by Microsoft OneLake**, then **querying it from both Snowflake and Fabric**.
+
+# Benefits
+
+- **Iceberg tables on OneLake** means that the Snowflake platform will be able to write Iceberg tables on OneLake.
+- All data stored in OneLake will be accessible by Snowflake compute and services
+- Snowflake data can be seamlessly integrated with Microsoft tools
+- All data from OneLake can be extended to Snowflake for cross-cloud AI, applications, sharing and collaboration, and advanced analytics, among many other workloads
+
+
+
+
+
 
 **Steps**  
 1. [Overview](01-overview.md)  
