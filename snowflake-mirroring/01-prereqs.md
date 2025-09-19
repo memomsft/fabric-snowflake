@@ -6,3 +6,5 @@ Ensure the following before starting:
 - Internet access from Fabric to Snowflake endpoints
 
 ✅ **Tip:** Use a Fabric F SKU or Trial capacity for hands-on learning.
+
+> Continue to **[2. Setup Snowflake](02-setup-snowflake.md)**.
