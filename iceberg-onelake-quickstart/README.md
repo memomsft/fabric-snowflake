@@ -17,7 +17,7 @@ This workshop guides you through creating an **Iceberg table backed by Microsoft
 - All data from OneLake can be extended to Snowflake for cross-cloud AI, applications, sharing and collaboration, and advanced analytics, among many other workloads
 
 
-![OneLake](img/onelakes_2.png)
+![OneLake](img/onelakes2.png)
 
 
 
