@@ -2,6 +2,8 @@
 
 1. Use Fabric SQL Endpoint or a Notebook to query the mirrored tables:
 
+![Mirror2](img/mirror10.png)
+
 ```sql
 SELECT country, COUNT(*) 
 FROM IOT.READINGS
