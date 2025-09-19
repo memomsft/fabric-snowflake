@@ -4,12 +4,14 @@ Now that the Iceberg table lives in **OneLake**, we can expose it to a **Fabric 
 
 ### Create a Table Shortcut
 1. Open the **Lakehouse** in your Fabric workspace.
-2. Select **New ▸ Table shortcut**.
-3. Browse to the path used by the table (the `BASE_LOCATION` inside your External Volume path):
-   ```
-   /Files/iceberg_ws/ws_dim_customer/
-   ```
-4. Complete the wizard. You should see a new table appear in the Lakehouse.
+2. In the **Tables** menu (...) --> select **New shorcut**.
+3. Select **Microsoft One Lake**
+4. Navigate the Lakehouse --> folder structure and select the checkbox next to your Iceberg table folder to select it as the shortcut target location. **Do not select** the checkboxes for "data" or "metadata" subfolders.
+5. Click **Next** and **Create** your shortcut. *If you get an error, retry*
+
+
+
+
 
 ### Validate from Fabric
 Use a Notebook or SQL endpoint in Fabric to query the shortcut:
