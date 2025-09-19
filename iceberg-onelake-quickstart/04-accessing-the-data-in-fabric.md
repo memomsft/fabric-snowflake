@@ -13,7 +13,7 @@ Now that the Iceberg table lives in **OneLake**, we can expose it to a **Fabric 
 
 ![Snowflake](img/shorcut_2.png)
 
-Voila! We have now our shortcut available and we can see a preview of the records from the Iceberg table from Snowflake directly in Fabric
+Voila! We have now our shortcut available and we can see a preview of the records from the Snowflake Iceberg table in Fabric
 
 ![Snowflake](img/shorcut_3.png)
 
