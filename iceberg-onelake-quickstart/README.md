@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="../assets/fabric.png" alt="Fabric" width="90"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="img/ice.png" alt="Snowflake" width="135"/>
+</p>
+
+
 # Getting Started with Iceberg in OneLake (Workshop)
 
 This workshop mirrors the Snowflake Quickstart structure and guides you through creating an **Iceberg table backed by Microsoft OneLake**, then **querying it from both Snowflake and Fabric**.
