@@ -127,7 +127,7 @@ SELECT * FROM dim_customer LIMIT 10;
 
 ![Snowflake](img/snowflake_11.png)
 
-We can also see the files generated in Fabric File's area for the Iceberg table. The Iceberg table folder contains a `metadata` folder, and that `metadata` folder contains a file ending in 1metadata.json1. 
+We can also see the files generated in Fabric File's area for the Iceberg table. The Iceberg table folder contains a `metadata` folder, and that `metadata` folder contains a file ending in `metadata.json1`. 
 
 ![Snowflake](img/snowflake_12.png)
 
