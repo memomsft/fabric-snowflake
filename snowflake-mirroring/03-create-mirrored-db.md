@@ -5,7 +5,7 @@
 2. Select **Snowflake** as the source.
 
 ![Mirror2](img/mirror4.png)
-![Mirror2](img/mirror5.png)
+
 
 4. Enter the following details in `connection details`:
 - **Server:** Navigate to the accounts on the resource menu in Snowflake. Cick on `Account Details` you can copy the server name to the clipboard. 
@@ -23,13 +23,15 @@
 
 ![Mirror2](img/mirror5.png)  
 
+7. Select the source database for the mirrored object
+
+![Mirror2](img/mirror6.png)  
 
 
+8. Choose the tables to replicate
 
-
-
-
-
+![Mirror2](img/mirror7.png)  
   
+9. Select `Create mirrored database`
 
-
+![Mirror2](img/mirror8.png)  
