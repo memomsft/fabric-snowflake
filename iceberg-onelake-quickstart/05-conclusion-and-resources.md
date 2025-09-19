@@ -12,5 +12,5 @@ You created:
 - Explore writing from Fabric back into Iceberg and reading in Snowflake.
 
 ## Resources
-- Microsoft Fabric: *Use Snowflake with Iceberg tables in OneLake* — [https://learn.microsoft.com/fabric/onelake/onelake-iceberg-tables](https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-snowflake)
+- Microsoft Fabric: *Use Snowflake with Iceberg tables in OneLake* — https://learn.microsoft.com/en-us/fabric/onelake/onelake-iceberg-snowflake
 - Snowflake Quickstart: *Getting Started with Iceberg in OneLake* — https://quickstarts.snowflake.com/guide/getting_started_with_iceberg_in_oneLake/index.html
