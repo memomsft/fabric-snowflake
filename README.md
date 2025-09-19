@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="img/fabric.png" alt="Fabric" width="125"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="img/snow.png" alt="Snowflake" width="90"/>
+</p>
+
+
+
 # Fabric + Snowflake Integration Scenarios
 
 This repository collects **multiple end-to-end integration patterns** between **Microsoft Fabric** and **Snowflake**.
