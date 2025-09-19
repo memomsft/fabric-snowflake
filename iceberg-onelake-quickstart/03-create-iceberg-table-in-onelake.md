@@ -6,7 +6,7 @@ In this step you will **(a) create an External Volume** that points to your Fabr
 
 Before creating an Iceberg table, we must have an external volume. An external volume is one Snowflake object that stores information about your cloud storage locations, and identity and access management (IAM) entities (in this case, our Entra ID Tenant). Snowflake uses the external volume to establish a connection with our cloud storage in order to access Iceberg metadata and Parquet data.
 
-We will need the OneLake Base URL. To find this in Fabric UI:
+We will need the **OneLake Base URL**. To find this in Fabric UI:
 
 Update the placeholders for your **Fabric Workspace**, **Lakehouse** and **Tenant ID**.
 
