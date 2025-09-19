@@ -72,12 +72,14 @@ The output of above command returns the **AZURE_CONSENT_URL** and **AZURE_MULTI_
 
 Open the **consent URL** from the previous step in a new browser tab, if you haven't done this previously. If you would like to proceed, consent to the required application permissions, if prompted. You may be redirected to the main Snowflake website, this will enable the service principal to be assigned within Fabric
 
+
 ![Snowflake](img/snowflake_sp.png)
 
 
 Now let's grant this service principal access to the Fabric Lakehouse we created earlier:
 
 - From **Fabric settings** :gear: --> **Admin Portal** --> **Tenant Settings** --> **Developer Settings** : Enable the option `Service Principals can call Fabric public APIs`
+
 
 ![Snowflake](img/snowflake_9.png)
 
