@@ -90,13 +90,17 @@ Now let's grant this service principal access to the Fabric Lakehouse we created
 
 ![Snowflake](img/snowflake_10.png)
 
+---
+
 ### C) Create the Iceberg Table
+
+Let's go to Snowflake and run the next SQL statements to create our Iceber table and insert data from the sample dataset. Remember to use your object names if you're using a different naming convention
 
 ```sql
 USE DATABASE FAB_SF_DEMO_DB;
 USE SCHEMA ICEBERG_WS;
 
-CREATE OR REPLACE ICEBERG TABLE WS_DIM_CUSTOMER (
+CREATE OR REPLACE ICEBERG TABLE dim_customer (
     C_CUSTKEY     STRING,
     C_NAME        STRING,
     C_ADDRESS     STRING,
@@ -106,18 +110,21 @@ CREATE OR REPLACE ICEBERG TABLE WS_DIM_CUSTOMER (
     C_MKTSEGMENT  STRING,
     C_COMMENT     STRING
 )
-EXTERNAL_VOLUME = 'EXVOL_ONELAKE_WS'
-CATALOG = snowflake
-BASE_LOCATION = 'ws_dim_customer';
+EXTERNAL_VOLUME = 'FabricExtVol'
+CATALOG = SNOWFLAKE
+BASE_LOCATION = 'dim_customer/';
 
 -- Load a small sample from TPCH_SF1.CUSTOMER
-INSERT INTO WS_DIM_CUSTOMER
+INSERT INTO dim_customer
   SELECT TOP 500 *
   FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER;
 
 -- Verify in Snowflake
-SELECT COUNT(*) AS rowcount FROM WS_DIM_CUSTOMER;
-SELECT * FROM WS_DIM_CUSTOMER LIMIT 10;
+SELECT COUNT(*) AS rowcount FROM dim_customer;
+SELECT * FROM dim_customer LIMIT 10;
+
 ```
+
+![Snowflake](img/snowflake_11.png)
 
 > Continue to **[4. Accessing the Data in Fabric](04-accessing-the-data-in-fabric.md)**.
