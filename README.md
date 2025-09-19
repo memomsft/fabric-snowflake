@@ -16,7 +16,7 @@ This repository collects **multiple end-to-end integration patterns** between **
 |---------|-------------|--------|
 | **Iceberg + OneLake Quickstart** | Create a Snowflake Iceberg table on OneLake and query it from Fabric Lakehouse via shortcut. | [Iceberg + OneLake Quickstart](./iceberg-onelake-quickstart) |
 | **Snowflake Mirroring** | Create a mirrored Snowflake Database for near real-time acces in Microsoft Fabric. | [Snowflake Mirroring](./snowflake-mirroring) |
-
+| **TBD** | Lorem Ipsum. | [Coming Soon]() |
 ---
 
 ## 🧑‍💻 How to Use This Repo
