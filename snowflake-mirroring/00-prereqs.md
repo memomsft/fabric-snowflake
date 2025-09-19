@@ -4,11 +4,11 @@ Ensure the following before starting:
 - Snowflake account with CREATE DATABASE privilege in case you want to create new tables to replicate.
 - Fabric workspace with Contributor access
 - Internet access from Fabric to Snowflake endpoints
-- Ensure the user who is performing the mirroring has the correct permissions as stated in [00-premissions](00-permissions.md)**.
+- Ensure the user who is performing the mirroring has the correct permissions as stated in [01-premissions](01-permissions.md)**.
 
 ✅ **Tip:** Use a Fabric F SKU or Trial capacity for hands-on learning.
 
 ⚠️ Important: The CREATE DATABASE permissions are recommended only for the lab environment.
 In production, database/schema/table creation is usually handled by an administrator role (e.g., SYSADMIN).
 
-> Continue to **[2. Setup Snowflake](02-setup-snowflake.md)**.
+> Continue to **[1. Permissions](01-permissions.md)**.
