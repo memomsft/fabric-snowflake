@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="img/onelakes.png" alt="One Lake" width="90"/>
+  <img src="img/onelakes.png" alt="One Lake" width="100"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="img/ice.png" alt="Iceberg" width="135"/>
+  <img src="img/ice.png" alt="Iceberg" width="100"/>
 </p>
 
 
