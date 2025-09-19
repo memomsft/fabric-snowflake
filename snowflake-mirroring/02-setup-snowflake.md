@@ -10,7 +10,7 @@ Then once all the objects are created, run the following to validate the data is
 
 ```sql
 -- Validate sample data
-SELECT * FROM '<YOUR_DB>'.`YOUR_SCHEMA`.`<YOUR_TABLE>`LIMIT 5;
+SELECT * FROM <YOUR_DB>.`YOUR_SCHEMA`.`<YOUR_TABLE>`LIMIT 5;
 ```
 
 ![Mirror3](img/mirror3.png)
