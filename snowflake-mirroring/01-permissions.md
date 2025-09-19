@@ -53,4 +53,4 @@ This allows you to:
 - Apply different auto-suspend/auto-resume settings
 
 
- 
+ > Continue to **[2.Setup Snowflake](02-setup-snowflake.md)**.
