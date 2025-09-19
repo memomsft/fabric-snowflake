@@ -1,4 +1,4 @@
-# Step 1: Prerequisites
+# Step 0: Prerequisites
 
 Ensure the following before starting:
 - Snowflake account with CREATE DATABASE privilege in case you want to create new tables to replicate.
