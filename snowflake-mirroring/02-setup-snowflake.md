@@ -1,6 +1,6 @@
 # Step 2: Prepare Sample Data
 
-Run the SQL script `scripts/create_iot_demo_db.sql` in Snowflake Worksheets to create the database and populate tables.
+Run the SQL script contained within this workshop directoyy --> `script/create_iot_demo_db.sql` in a Snowflake Workshees to create the database and populate tables.
 
 Then once all the objects are created, run the following to validate the data is properly inserted
 
