@@ -19,7 +19,7 @@ Voila! We have now our shortcut available and we can see a preview of the record
 
 
 ### Validate from Fabric
-Let's also try to use our Spark & TSQL engine to query Iceberg tables. We can use a Notebook or SQL endpoint in Fabric to query the shortcut:
+Let's also validate this with our Fabric Spark & TSQL engine to query Iceberg tables. We can use a Notebook or SQL endpoint in Fabric to query the shortcut:
 (replace with your object's name)
 ```sql
 SELECT COUNT(*) FROM [Snow_LH].[dbo].[dim_customer.buSuChYZ];
