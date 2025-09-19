@@ -127,4 +127,14 @@ SELECT * FROM dim_customer LIMIT 10;
 
 ![Snowflake](img/snowflake_11.png)
 
+We can also see the files generated in Fabric File's area for the Iceberg table. The Iceberg table folder contains a `metadata` folder, and that `metadata` folder contains a file ending in 1metadata.json1. 
+
+![Snowflake](img/snowflake_12.png)
+
+If you're not sure where the table is stored, we can also run the following query in Snowflake to discover this information.
+
+![Snowflake](img/snowflake_13.png)
+
+---
+
 > Continue to **[4. Accessing the Data in Fabric](04-accessing-the-data-in-fabric.md)**.
