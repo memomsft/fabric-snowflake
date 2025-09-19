@@ -21,7 +21,14 @@
 5. **Privacy Level:** Leave it as is
 6. Click **Connect**
 
-![Mirror2](img/mirror6.png)
+![Mirror2](img/mirror5.png)  
+
+
+
+
+
+
+
 
   
 
