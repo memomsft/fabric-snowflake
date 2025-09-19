@@ -38,6 +38,8 @@ GRANT ROLE `<ROLE_NAME>` TO USER `<USER_FOR_MIRRORING>`;
 
 ```
 
+ ![Mirror1](img/mirror1.png)
+
 ## 🏗 Warehouse Considerations
 
 You can use any warehouse with `USAGE` granted to the role. Default `COMPUTE_WH` is fine. For labs or demos, an `X-SMALL` warehouse is recommended.
@@ -50,4 +52,5 @@ This allows you to:
 - Scale warehouse size independently of other workloads
 - Apply different auto-suspend/auto-resume settings
 
-  ![Mirror1](img/mirror1.png)
+
+ 
