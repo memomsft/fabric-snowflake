@@ -23,7 +23,7 @@
 
 ![Mirror2](img/mirror5.png)  
 
-7. Select the source database for the mirrored object
+7. Select the source database for the mirrored object from the list
 
 ![Mirror2](img/mirror6.png)  
 
@@ -35,3 +35,7 @@
 9. Select `Create mirrored database`
 
 ![Mirror2](img/mirror8.png)  
+
+10. Leave the replication process complete. You will see the mirrored databse and the details for the tables and rows. Here we can also manage the replication and configure different settings.
+
+![Mirror2](img/mirror9.png)      
