@@ -38,4 +38,8 @@
 
 10. Leave the replication process complete. You will see the mirrored databse and the details for the tables and rows. Here we can also manage the replication and configure different settings.
 
-![Mirror2](img/mirror9.png)      
+![Mirror2](img/mirror9.png) 
+
+Let's query this data to interact with the mirrored data... (next section)
+
+
