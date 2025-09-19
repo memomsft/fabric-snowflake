@@ -16,6 +16,7 @@ Snowflake Mirroring allows Fabric to read Snowflake data continuously, enabling 
 - Power BI or Fabric SQL Endpoint enabled
 
 ## 🚀 Steps
+0. [Permissions](00-permissions.md)
 1. [Prepare Snowflake Environment](01-prereqs.md)
 2. [Create Sample Data in Snowflake](02-setup-snowflake.md)
 3. [Mirror the Database in Fabric](03-create-mirrored-db.md)
