@@ -19,24 +19,28 @@ Voila! We have now our shortcut available and we can see a preview of the record
 
 
 ### Validate from Fabric
-Let's also try to use our SQL engine to query Iceberg tables. We can use a Notebook or SQL endpoint in Fabric to query the shortcut:
-
+Let's also try to use our Spark & TSQL engine to query Iceberg tables. We can use a Notebook or SQL endpoint in Fabric to query the shortcut:
+(replace with your object's name)
 ```sql
-SELECT COUNT(*) FROM dim_customer;
+SELECT COUNT(*) FROM [Snow_LH].[dbo].[dim_customer.buSuChYZ];
 SELECT C_NATIONKEY, COUNT(*) AS cnt
-FROM ws_dim_customer
+FROM [Snow_LH].[dbo].[dim_customer.buSuChYZ]
 GROUP BY C_NATIONKEY
 ORDER BY cnt DESC;
 ```
 ![Snowflake](img/shorcut_4.png)
 
-From a Notebook..
+From a Notebook.. (replace with your object's name)
 
-
-
+```python
+df = spark.sql("SELECT * FROM Snow_LH.`dim_customer.buSuChYZ` LIMIT 50")
+display(df)
+```
 
 ![Snowflake](img/shorcut_5.png)
 
-You have now validated **bi‑directional access**: Snowflake wrote data in Iceberg on OneLake, and Fabric read it via a shortcut.
+
+
+You have now validated **bi‑directional access**: Snowflake wrote data in Iceberg on OneLake storage, and Fabric read it via a shortcut.
   
 > Continue to **[5. Conclusion and Resources](05-conclusion-and-resources.md)**.
