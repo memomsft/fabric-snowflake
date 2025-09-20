@@ -10,7 +10,7 @@ Mirroring is ideal when you need to keep Fabric in sync with Snowflake without m
 
 Below the architecture reference for the Database Mirroring:
 
-
+![Mirror2](img/cdc.png)
 
 
 **What you will learn:**
