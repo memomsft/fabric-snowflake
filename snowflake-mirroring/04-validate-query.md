@@ -4,14 +4,36 @@
 
 ![Mirror2](img/mirror10.png)
 
+
+
+2. Execute a sample query on your data. Here an example (you should modify it as per your tables)
+   
 ```sql
-SELECT country, COUNT(*) 
-FROM IOT.READINGS
-GROUP BY country;
+SELECT 
+    r.READING_ID,
+    r.READING_TS,
+    r.TEMPERATURE,
+    r.HUMIDITY,
+    d.DEVICE_TYPE,
+    d.REGISTERED_ON,
+    l.COUNTRY,
+    l.CITY
+FROM IOT.READINGS r
+INNER JOIN IOT.DEVICES d
+    ON r.DEVICE_ID = d.DEVICE_ID
+INNER JOIN IOT.LOCATIONS l
+    ON r.LOCATION_ID = l.LOCATION_ID
+ORDER BY r.READING_TS DESC;
 ```
 
 ![Mirror2](img/mirror11.png)
 
-✅ **Expected Result:** You should see counts grouped by country from the Snowflake source data.
+3. If we execute this same query in Snowflake we should get the same result
+
+![Mirror2](img/mirror12.png)   
+
+
+✅ **Expected Result:** You should see the output of Snowflake source data from Fabric.
+
 
 > Continue to **[5.Resources ](05-resources.md)**.
