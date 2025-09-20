@@ -5,7 +5,7 @@ This workshop demonstrates how to mirror a **custom IoT dataset** from Snowflake
 ## 📝 Overview
 Snowflake Mirroring allows Fabric to read Snowflake data continuously, enabling near real-time analytics in Fabric without building pipelines.
 
-## When to use: 
+**When to use:**
 Mirroring is ideal when you need to keep Fabric in sync with Snowflake without manually copying data or scheduling batch jobs. It works similarly to CDC (Change Data Capture) — tracking changes in Snowflake and streaming them into Fabric — so your analytics stay up to date with minimal latency. This is particularly useful for scenarios like IoT telemetry, financial transactions, or any workload where fresh data is critical for decision-making.
 
 **What you will learn:**
