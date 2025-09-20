@@ -13,3 +13,5 @@ GROUP BY country;
 ![Mirror2](img/mirror11.png)
 
 ✅ **Expected Result:** You should see counts grouped by country from the Snowflake source data.
+
+> Continue to **[5.Resources ](05-resources.md)**.
