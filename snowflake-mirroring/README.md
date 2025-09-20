@@ -21,7 +21,7 @@ Snowflake Mirroring allows Fabric to read Snowflake data continuously, enabling 
 2. [Create Sample Data in Snowflake](02-setup-snowflake.md)
 3. [Mirror the Database in Fabric](03-create-mirrored-db.md)
 4. [Query and Validate Data](04-validate-query.md)
-
+5. [Resources](05-resources.md)
 ---
 
 ## ℹ️ Notes
