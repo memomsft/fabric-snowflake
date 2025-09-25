@@ -24,8 +24,8 @@ Below the architecture reference for the Database Mirroring:
 - Power BI or Fabric SQL Endpoint enabled
 
 ## 🚀 Steps
-0. [Permissions](00-permissions.md)
-1. [Prepare Snowflake Environment](01-prereqs.md)
+0. [Permissions](00-prereqs.md)
+1. [Prepare Snowflake Environment](01-permissions.md)
 2. [Create Sample Data in Snowflake](02-setup-snowflake.md)
 3. [Mirror the Database in Fabric](03-create-mirrored-db.md)
 4. [Query and Validate Data](04-validate-query.md)
