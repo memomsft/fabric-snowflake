@@ -25,4 +25,7 @@ This repository collects **multiple end-to-end integration patterns** between **
 2. Navigate to the folder of the integration you want to try.
 3. Follow the README in that folder for step-by-step instructions.
 
+
+## 📌 Maintainer
+Maintained by [@memomsft](https://github.com/memomsft).  
 > 💡 *Contributions and suggestions welcome!*
