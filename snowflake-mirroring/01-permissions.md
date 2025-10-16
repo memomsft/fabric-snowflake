@@ -58,8 +58,8 @@ Run the following commands to transfer ownership to your mirroring role while pr
 USE ROLE ACCOUNTADMIN;
 
 -- Transfer schema ownership to the mirroring role
-GRANT OWNERSHIP ON SCHEMA FABRIC_MIRROR_DEMO.IOT 
-TO ROLE SNOW_MIRRORING_ROLE 
+GRANT OWNERSHIP ON SCHEMA <DATABASE_NAME.SCHEMA_NAME> 
+TO ROLE <ROLE_NAME> 
 COPY CURRENT GRANTS;
 ```
 ---
