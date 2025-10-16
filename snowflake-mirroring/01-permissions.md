@@ -40,9 +40,10 @@ GRANT ROLE <ROLE_NAME> TO USER <USER_FOR_MIRRORING>;
 
  ![Mirror1](img/mirror1.png)
 
- **IMPORTANT**
- 
-Snowflake Ownership Requirement
+## 💡IMPORTANT
+
+**Snowflake Ownership Requirement**
+
 In Snowflake, **ownership** is a critical concept for database objects. If the database or schema you want to replicate has ownership assigned to the **ACCOUNTADMIN** role (which is common when objects are created by administrators), you must transfer or share the ownership with the role that will be used for replication.
 
 **Why is this needed?**
