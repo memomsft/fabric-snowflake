@@ -41,13 +41,16 @@ GRANT ROLE <ROLE_NAME> TO USER <USER_FOR_MIRRORING>;
  ![Mirror1](img/mirror1.png)
 
  **IMPORTANT**
+ 
 Snowflake Ownership Requirement
 In Snowflake, **ownership** is a critical concept for database objects. If the database or schema you want to replicate has ownership assigned to the **ACCOUNTADMIN** role (which is common when objects are created by administrators), you must transfer or share the ownership with the role that will be used for replication.
 
 **Why is this needed?**
+
 Even if your replication role has `SELECT`, `CREATE STREAM`, and other necessary privileges, certain streaming and mirroring operations may fail if the role doesn't have ownership of the schema and tables.
 
 **Solution: Transfer Ownership**
+
 Run the following commands to transfer ownership to your mirroring role while preserving existing grants. (Only if the database object to replicate does not have ownership on the source table)
 
 ```sql
@@ -58,7 +61,7 @@ GRANT OWNERSHIP ON SCHEMA FABRIC_MIRROR_DEMO.IOT
 TO ROLE SNOW_MIRRORING_ROLE 
 COPY CURRENT GRANTS;
 ```
-
+---
 ## 🏗 Warehouse Considerations
 
 You can use any warehouse with `USAGE` granted to the role. Default `COMPUTE_WH` is fine. For labs or demos, an `X-SMALL` warehouse is recommended.
