@@ -62,6 +62,15 @@ GRANT OWNERSHIP ON SCHEMA <DATABASE_NAME.SCHEMA_NAME>
 TO ROLE <ROLE_NAME> 
 COPY CURRENT GRANTS;
 ```
+
+**Snowflake Default Role**
+
+Other important note is that you should change the `default role` for your user so that it uses the role for mirroring. That way the connection is going to authenticate and then inherit this role to replicate the data. Usually account admin is the default role.
+
+```sql
+ALTER USER <USER FOR MIRRORING> SET DEFAULT_ROLE = <ROLE_NAME>;
+```
+
 ---
 ## 🏗 Warehouse Considerations
 
